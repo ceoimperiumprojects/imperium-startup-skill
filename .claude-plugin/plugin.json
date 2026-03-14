@@ -2,7 +2,9 @@
   "name": "imperium-startup",
   "version": "1.0.0",
   "description": "Complete startup skill suite: CEO strategy, CTO architecture, product management, marketing (SEO/CRO/copy/email/growth), B2B sales (cold email, 137 triggers, 11 GTM plays), finance (SaaS metrics, DCF), fundraising (pitch deck, investor prep), founder workflows (idea validation, Mom Test, competitor analysis, pricing). Use when the user mentions anything related to startup strategy, fundraising, marketing, sales, product, hiring, metrics, pitch deck, go-to-market, cold email, landing page, SEO, growth, churn, MRR, CAC, LTV, runway, burn rate, or any business/startup topic.",
-  "author": "Imperium Tech / Pavle Anđelković",
+  "author": {
+    "name": "Imperium Tech / Pavle Anđelković"
+  },
   "license": "MIT",
   "homepage": "https://github.com/ceoimperiumprojects/imperium-startup-skill",
   "skills": [
