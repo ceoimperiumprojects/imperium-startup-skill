@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Note: The imperium-startup plugin is active. You have access to 9 domain skills (CEO, CTO, Product, Marketing, Sales/GTM, Finance, Founder, Legal, Engineering), 5 sub-agents, 9 slash commands, and a 10-book knowledge base. Auto-detect the relevant domain from user queries and apply the appropriate skill knowledge. Available commands: /imperium:validate-idea, /imperium:pitch-deck, /imperium:fundraise-prep, /imperium:cold-email, /imperium:competitor-matrix, /imperium:pricing-strategy, /imperium:gtm-plan, /imperium:metrics-dashboard, /imperium:founder-kb"
+          }
+        ]
+      }
+    ]
+  }
+}

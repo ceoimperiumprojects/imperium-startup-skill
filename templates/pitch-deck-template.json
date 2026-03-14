@@ -1,0 +1,78 @@
+{
+  "title": "Pitch Deck Template",
+  "version": "1.0",
+  "slides": [
+    {
+      "number": 1,
+      "name": "Title Slide",
+      "content": ["Company name", "One-line tagline", "Founder name(s)", "Contact info"],
+      "notes": "First impression. Make it memorable. Tagline should pass the 'mom test' — anyone should understand what you do."
+    },
+    {
+      "number": 2,
+      "name": "Problem",
+      "content": ["The pain point (specific, measurable)", "Who feels it (target persona)", "How they cope today (current alternatives)", "Why now (market timing)"],
+      "notes": "Make the investor FEEL the problem. Use a story or data point. Avoid abstract problems — be specific about who hurts and how much."
+    },
+    {
+      "number": 3,
+      "name": "Solution",
+      "content": ["Your product in one sentence", "How it works (3 steps max)", "Key differentiator", "Demo screenshot or mockup"],
+      "notes": "Show, don't tell. If you can demo, demo. 3-step explanation max. The 'aha moment' should be obvious."
+    },
+    {
+      "number": 4,
+      "name": "Market Size",
+      "content": ["TAM (Total Addressable Market)", "SAM (Serviceable Addressable Market)", "SOM (Serviceable Obtainable Market)", "Bottom-up calculation methodology"],
+      "notes": "Investors care about SAM/SOM more than TAM. Show bottom-up math, not top-down 'if we get 1% of a $100B market'. Reference credible sources."
+    },
+    {
+      "number": 5,
+      "name": "Business Model",
+      "content": ["Revenue model (subscription, transaction, etc.)", "Pricing tiers", "Unit economics (CAC, LTV, payback)", "Key assumptions"],
+      "notes": "Show you understand the money. LTV:CAC ratio >3:1 is healthy. Payback period <12 months is ideal for SaaS."
+    },
+    {
+      "number": 6,
+      "name": "Traction",
+      "content": ["Key metrics (MRR, users, growth rate)", "Milestones achieved", "Notable customers or LOIs", "Growth trajectory chart"],
+      "notes": "This is the most important slide for early-stage. Show momentum. Even pre-revenue traction counts: waitlist, LOIs, pilots, partnerships."
+    },
+    {
+      "number": 7,
+      "name": "Competition",
+      "content": ["Competitive landscape (2x2 matrix preferred)", "Your unique positioning", "Defensible advantages (moat)", "Why incumbents can't/won't do this"],
+      "notes": "Never say 'no competition'. Use a 2x2 matrix with axes that make you look good (choose axes where you're in the top-right). Be honest about strengths of competitors."
+    },
+    {
+      "number": 8,
+      "name": "Go-to-Market",
+      "content": ["Customer acquisition strategy", "Sales motion (self-serve, sales-led, PLG)", "Key channels", "Early wins and playbook"],
+      "notes": "Show you know HOW to reach customers, not just that they exist. Specificity > ambition. 'We'll acquire first 100 users through X' beats 'we'll do digital marketing'."
+    },
+    {
+      "number": 9,
+      "name": "Team",
+      "content": ["Founders (relevant background, unfair advantages)", "Key hires (if any)", "Advisors (if notable)", "Why THIS team for THIS problem"],
+      "notes": "Founder-market fit is critical. Show domain expertise, prior exits, or unique insights. If team is thin, show you know who to hire next."
+    },
+    {
+      "number": 10,
+      "name": "Financials",
+      "content": ["Revenue projections (3 years)", "Key assumptions behind projections", "Current burn rate and runway", "Path to profitability"],
+      "notes": "Be realistic. Investors will stress-test your assumptions. Show you understand the levers: # customers × ARPU × retention. Include bear/base/bull cases if possible."
+    },
+    {
+      "number": 11,
+      "name": "The Ask",
+      "content": ["Amount raising", "Use of funds breakdown", "Milestones this funding enables", "Target timeline for next round"],
+      "notes": "Be specific. '€200K to achieve X, Y, Z milestones in 12 months' is better than '€200K for growth'. Show the bridge to next round or profitability."
+    },
+    {
+      "number": 12,
+      "name": "Appendix",
+      "content": ["Detailed financial model", "Technical architecture", "Customer testimonials", "Press/awards"],
+      "notes": "Have these ready for Q&A but don't present them unless asked."
+    }
+  ]
+}

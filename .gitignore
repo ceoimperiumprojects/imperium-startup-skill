@@ -1,0 +1,23 @@
+# Source repos (large, cloned separately)
+sources/
+
+# Eval workspace (generated output)
+imperium-startup-workspace/
+
+# ChromaDB vector store (36MB binary, regenerated via setup script)
+skills/founder/scripts/founder-kb/chroma_db/
+
+# Plan files
+imperium-startup-skill-plan-v2.md
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude internals
+.claude/

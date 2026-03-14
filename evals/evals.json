@@ -1,0 +1,190 @@
+{
+  "name": "imperium-startup",
+  "version": "1.0.0",
+  "evals": [
+    {
+      "id": "ceo-fundraising",
+      "domain": "ceo-advisor",
+      "prompt": "Prepare for my €200K investment round. I'm a solo founder, pre-revenue, with 5 LOIs pending.",
+      "expected_skills": ["ceo-advisor", "finance"],
+      "expected_references": ["fundraising.md", "pitch-deck.md"],
+      "assertions": ["mentions term sheet", "mentions valuation", "includes preparation steps", "references LOIs"]
+    },
+    {
+      "id": "ceo-strategy",
+      "domain": "ceo-advisor",
+      "prompt": "Review our strategic decision to expand to the US market from Serbia.",
+      "expected_skills": ["ceo-advisor"],
+      "expected_references": ["strategy-advisor.md", "decision-frameworks.md"],
+      "assertions": ["uses decision framework", "considers risks", "provides recommendation"]
+    },
+    {
+      "id": "ceo-board",
+      "domain": "ceo-advisor",
+      "prompt": "Prepare a board update for investors covering this month's progress.",
+      "expected_skills": ["ceo-advisor"],
+      "expected_references": ["board-prep.md"],
+      "assertions": ["includes metrics section", "has wins and challenges", "includes asks"]
+    },
+    {
+      "id": "sales-cold-email",
+      "domain": "sales-gtm",
+      "prompt": "Write a cold email to foreclosure attorneys in Miami for our surplus recovery service.",
+      "expected_skills": ["sales-gtm"],
+      "expected_references": ["cold-email.md", "sales-triggers.md"],
+      "assertions": ["under 150 words", "personalized opening", "single CTA", "no buzzwords"]
+    },
+    {
+      "id": "sales-pipeline",
+      "domain": "sales-gtm",
+      "prompt": "Build a 50-prospect pipeline for Simple Surplus targeting Florida attorneys.",
+      "expected_skills": ["sales-gtm"],
+      "expected_references": ["gtm-plays.md", "lead-qualification.md"],
+      "assertions": ["defines ICP", "includes qualification criteria", "suggests outreach sequence"]
+    },
+    {
+      "id": "marketing-landing",
+      "domain": "marketing",
+      "prompt": "Create landing page copy for Tunia, our AI vocal coach app.",
+      "expected_skills": ["marketing"],
+      "expected_references": ["copywriting.md", "cro.md"],
+      "assertions": ["has headline", "has CTA", "benefits over features", "structured sections"]
+    },
+    {
+      "id": "marketing-seo",
+      "domain": "marketing",
+      "prompt": "Write an SEO strategy for our vocal coaching app targeting amateur singers.",
+      "expected_skills": ["marketing"],
+      "expected_references": ["seo.md", "content-strategy.md"],
+      "assertions": ["includes keyword strategy", "content plan", "technical SEO", "metrics"]
+    },
+    {
+      "id": "marketing-email",
+      "domain": "marketing",
+      "prompt": "Create a 5-email onboarding sequence for new Tunia users.",
+      "expected_skills": ["marketing"],
+      "expected_references": ["email-sequences.md"],
+      "assertions": ["5 emails", "timing specified", "each has subject line", "progressive value"]
+    },
+    {
+      "id": "product-prd",
+      "domain": "product-manager",
+      "prompt": "Critique this PRD for Simple Surplus automation feature: automate surplus claim filing.",
+      "expected_skills": ["product-manager"],
+      "expected_references": ["prd-framework.md"],
+      "assertions": ["checks for problem statement", "validates metrics", "identifies gaps"]
+    },
+    {
+      "id": "product-prioritize",
+      "domain": "product-manager",
+      "prompt": "Prioritize our feature backlog using RICE: notifications, analytics dashboard, API integration, mobile app.",
+      "expected_skills": ["product-manager"],
+      "expected_references": ["roadmap.md"],
+      "assertions": ["uses RICE framework", "scores each feature", "provides ranking"]
+    },
+    {
+      "id": "cto-architecture",
+      "domain": "cto-advisor",
+      "prompt": "Evaluate our Node.js + Oracle Cloud architecture for Simple Surplus.",
+      "expected_skills": ["cto-advisor"],
+      "expected_references": ["architecture.md", "stack-selection.md"],
+      "assertions": ["evaluates current stack", "identifies concerns", "recommends improvements"]
+    },
+    {
+      "id": "cto-build-buy",
+      "domain": "cto-advisor",
+      "prompt": "Should we build or buy the ML pipeline for Tunia's voice analysis?",
+      "expected_skills": ["cto-advisor"],
+      "expected_references": ["stack-selection.md"],
+      "assertions": ["uses build vs buy framework", "considers team capability", "provides recommendation"]
+    },
+    {
+      "id": "finance-metrics",
+      "domain": "finance",
+      "prompt": "Calculate our SaaS metrics: MRR is €0, we have 5 LOIs pending worth €50K total, burn rate is €3000/month, cash is €10K.",
+      "expected_skills": ["finance"],
+      "expected_references": ["saas-metrics.md"],
+      "assertions": ["calculates runway", "assesses health", "provides benchmarks"]
+    },
+    {
+      "id": "finance-runway",
+      "domain": "finance",
+      "prompt": "Model our runway with €200K investment at current burn rate of €3000/month.",
+      "expected_skills": ["finance"],
+      "expected_references": ["financial-modeling.md"],
+      "assertions": ["calculates runway months", "includes scenarios", "identifies milestones"]
+    },
+    {
+      "id": "founder-validate",
+      "domain": "founder",
+      "prompt": "Validate the Simple Surplus business idea: helping homeowners recover foreclosure surplus funds.",
+      "expected_skills": ["founder"],
+      "expected_references": ["idea-validation.md"],
+      "assertions": ["asks five fatal questions", "provides scorecard", "suggests experiments"]
+    },
+    {
+      "id": "founder-interviews",
+      "domain": "founder",
+      "prompt": "Help me prepare Mom Test interviews for Tunia users.",
+      "expected_skills": ["founder"],
+      "expected_references": ["user-interviews.md"],
+      "assertions": ["provides interview questions", "avoids leading questions", "focuses on past behavior"]
+    },
+    {
+      "id": "legal-entity",
+      "domain": "legal",
+      "prompt": "What entity structure should we use for a Serbian startup targeting the US market?",
+      "expected_skills": ["legal"],
+      "expected_references": ["entity-structure.md"],
+      "assertions": ["compares entity types", "considers international aspects", "recommends structure"]
+    },
+    {
+      "id": "engineering-agent",
+      "domain": "engineering-advanced",
+      "prompt": "Design an agent architecture for Tunia's AI vocal coaching system.",
+      "expected_skills": ["engineering-advanced"],
+      "expected_references": ["agent-design.md"],
+      "assertions": ["proposes architecture pattern", "defines tools", "includes guardrails"]
+    },
+    {
+      "id": "sales-offer-pricing",
+      "domain": "sales-gtm",
+      "prompt": "How should I structure my offer pricing for a B2B SaaS product?",
+      "expected_skills": ["sales-gtm"],
+      "expected_references": ["offer-creation.md"],
+      "assertions": ["references value equation", "discusses pricing psychology", "mentions guarantee stacking"]
+    },
+    {
+      "id": "founder-imposter",
+      "domain": "founder",
+      "prompt": "I feel like an imposter as a founder. Everyone seems more experienced than me.",
+      "expected_skills": ["founder"],
+      "expected_references": ["founder-mindset.md"],
+      "assertions": ["normalizes imposter syndrome", "cites statistics", "provides actionable strategies"]
+    },
+    {
+      "id": "sales-negotiation",
+      "domain": "sales-gtm",
+      "prompt": "What negotiation tactics work best for closing enterprise sales deals?",
+      "expected_skills": ["sales-gtm"],
+      "expected_references": ["negotiation-tactics.md"],
+      "assertions": ["mentions tactical empathy", "includes calibrated questions", "references mirroring or labeling"]
+    },
+    {
+      "id": "ceo-zero-to-one",
+      "domain": "ceo-advisor",
+      "prompt": "What does Zero to One say about competition and how should that shape our strategy?",
+      "expected_skills": ["ceo-advisor"],
+      "expected_references": ["contrarian-strategy.md"],
+      "assertions": ["explains competition is for losers", "mentions monopoly building", "discusses power law"]
+    },
+    {
+      "id": "founder-kb-search",
+      "domain": "founder",
+      "prompt": "Search the knowledge base for product-market fit frameworks.",
+      "expected_skills": ["founder"],
+      "expected_references": ["book-insights-index.md", "lean-startup-methodology.md"],
+      "assertions": ["references knowledge base", "mentions PMF signals", "provides actionable frameworks"]
+    }
+  ]
+}
