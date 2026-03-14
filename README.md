@@ -19,13 +19,9 @@
 ## 🚀 Quick Start
 
 ```bash
-# Install directly from GitHub
-claude mcp add imperium-startup -- npx -y github:ceoimperiumprojects/imperium-startup-skill
-
-# Or clone and install locally
-git clone https://github.com/ceoimperiumprojects/imperium-startup-skill.git
-cd imperium-startup-skill
-claude plugin install .
+# Install in two commands
+claude plugin marketplace add ceoimperiumprojects/imperium-startup-skill
+claude plugin install imperium-startup
 ```
 
 That's it. All 9 skills activate automatically based on your prompts — no configuration needed.
