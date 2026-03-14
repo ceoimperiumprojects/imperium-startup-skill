@@ -24,6 +24,5 @@
     "./agents/growth-marketer.md",
     "./agents/sales-hunter.md",
     "./agents/product-analyst.md"
-  ],
-  "hooks": "./hooks/hooks.json"
+  ]
 }
