@@ -1,6 +1,6 @@
 {
-  "name": "imperium-startup",
-  "version": "1.0.0",
+  "name": "imperium-brain",
+  "version": "2.0.0",
   "evals": [
     {
       "id": "ceo-fundraising",
@@ -185,6 +185,199 @@
       "expected_skills": ["founder"],
       "expected_references": ["book-insights-index.md", "lean-startup-methodology.md"],
       "assertions": ["references knowledge base", "mentions PMF signals", "provides actionable frameworks"]
+    },
+
+    {
+      "id": "research-ecosystem",
+      "domain": "research",
+      "prompt": "Map the competitive landscape for AI vocal coaching apps. Who are all the competitors?",
+      "expected_skills": ["research"],
+      "expected_references": ["search-strategies.md"],
+      "assertions": ["uses multiple search strategies", "categorizes competitors", "produces structured output"]
+    },
+    {
+      "id": "research-deep",
+      "domain": "research",
+      "prompt": "Do a full deep research on the project management tools market. I want feature matrix, pricing, and sentiment.",
+      "expected_skills": ["research"],
+      "expected_references": ["search-strategies.md", "deliverables.md"],
+      "assertions": ["follows 9-phase framework", "checks imperium-crawl availability", "mentions deliverables"]
+    },
+    {
+      "id": "research-video-discovery",
+      "domain": "research",
+      "prompt": "Find all demo videos and walkthroughs for Notion, Linear, and Asana.",
+      "expected_skills": ["research"],
+      "expected_references": ["video-search.md", "validation.md"],
+      "assertions": ["uses multiple video search strategies", "validates video relevance", "documents findings in structured format"]
+    },
+    {
+      "id": "research-sentiment",
+      "domain": "research",
+      "prompt": "What do real users say about Figma vs Sketch vs Adobe XD? Mine Reddit and reviews.",
+      "expected_skills": ["research"],
+      "expected_references": ["search-strategies.md"],
+      "assertions": ["searches Reddit", "analyzes sentiment", "identifies loved and hated features"]
+    },
+    {
+      "id": "api-discovery-spa",
+      "domain": "api-discovery",
+      "prompt": "Discover the hidden APIs that Notion uses. I want to know all their internal endpoints.",
+      "expected_skills": ["api-discovery"],
+      "expected_references": ["api-patterns.md"],
+      "assertions": ["checks if SPA", "describes API discovery process", "mentions authentication detection", "outputs structured format"]
+    },
+    {
+      "id": "api-discovery-graphql",
+      "domain": "api-discovery",
+      "prompt": "I think this competitor uses GraphQL. How do I discover their schema and available queries?",
+      "expected_skills": ["api-discovery"],
+      "expected_references": ["api-patterns.md"],
+      "assertions": ["explains GraphQL introspection", "provides introspection query", "mentions schema analysis"]
+    },
+    {
+      "id": "brand-create",
+      "domain": "brand-voice",
+      "prompt": "Create a brand identity for my SaaS startup called FlowBoard — a project management tool for creative teams.",
+      "expected_skills": ["brand-voice"],
+      "expected_references": ["voice-guide.md"],
+      "assertions": ["asks about brand personality", "suggests colors", "defines voice character", "mentions output files"]
+    },
+    {
+      "id": "brand-voice-define",
+      "domain": "brand-voice",
+      "prompt": "Define our tone of voice. We're a developer tools company — technical but approachable.",
+      "expected_skills": ["brand-voice"],
+      "expected_references": ["voice-guide.md"],
+      "assertions": ["uses voice spectrums", "provides examples", "adapts for platforms", "mentions vocabulary patterns"]
+    },
+    {
+      "id": "linkedin-story",
+      "domain": "linkedin",
+      "prompt": "Write a LinkedIn post about how I went from solo founder to landing our first 10 paying customers.",
+      "expected_skills": ["linkedin"],
+      "expected_references": ["post-types.md", "hooks.md"],
+      "assertions": ["uses story post format", "includes hook", "proper LinkedIn formatting", "ends with CTA or question"]
+    },
+    {
+      "id": "linkedin-contrarian",
+      "domain": "linkedin",
+      "prompt": "I want to write a controversial LinkedIn take about why MVPs are overrated.",
+      "expected_skills": ["linkedin"],
+      "expected_references": ["post-types.md", "hooks.md", "psychology.md"],
+      "assertions": ["uses contrarian format", "strong hook", "backs up claim", "invites discussion"]
+    },
+    {
+      "id": "linkedin-listicle",
+      "domain": "linkedin",
+      "prompt": "Create a LinkedIn post: 7 things I learned from failing my first startup.",
+      "expected_skills": ["linkedin"],
+      "expected_references": ["post-types.md", "hooks.md"],
+      "assertions": ["uses listicle format", "numbered items", "short punchy points", "includes personal insight"]
+    },
+    {
+      "id": "carousel-linkedin",
+      "domain": "carousel",
+      "prompt": "Create a LinkedIn carousel about the 5 stages of product-market fit.",
+      "expected_skills": ["carousel"],
+      "expected_references": ["layout-guide.md"],
+      "assertions": ["uses square format", "one idea per slide", "includes cover and CTA slides", "references python-pptx"]
+    },
+    {
+      "id": "carousel-pitch",
+      "domain": "carousel",
+      "prompt": "Create a pitch deck for our Series A. We're a B2B SaaS doing $50K MRR.",
+      "expected_skills": ["carousel"],
+      "expected_references": ["layout-guide.md"],
+      "assertions": ["uses 16:9 format", "follows pitch structure", "includes traction slide", "mentions brand integration"]
+    },
+    {
+      "id": "video-pitch",
+      "domain": "video",
+      "prompt": "I need a 60-second pitch video for our AI startup. We're applying to Y Combinator.",
+      "expected_skills": ["video"],
+      "expected_references": ["video-types.md"],
+      "assertions": ["uses pitch video template", "provides timing breakdown", "checks for Remotion", "suggests alternatives if no Remotion"]
+    },
+    {
+      "id": "video-social-clip",
+      "domain": "video",
+      "prompt": "Create a short social media video clip about our new feature launch for LinkedIn and TikTok.",
+      "expected_skills": ["video"],
+      "expected_references": ["video-types.md"],
+      "assertions": ["uses social clip template", "mentions vertical format", "hook in first 2 seconds", "platform-specific guidance"]
+    },
+    {
+      "id": "slides-html",
+      "domain": "slides",
+      "prompt": "Create an HTML presentation about our Q1 results. I want something I can open in browser.",
+      "expected_skills": ["slides"],
+      "expected_references": ["style-presets.md"],
+      "assertions": ["generates HTML file", "includes keyboard navigation", "zero dependencies", "offers style presets"]
+    },
+    {
+      "id": "slides-branded",
+      "domain": "slides",
+      "prompt": "Make a web presentation about our product roadmap using our brand colors.",
+      "expected_skills": ["slides"],
+      "expected_references": ["style-presets.md"],
+      "assertions": ["checks for brand.json", "applies brand colors", "generates self-contained HTML"]
+    },
+    {
+      "id": "sop-customer-onboarding",
+      "domain": "sop",
+      "prompt": "Write an SOP for our customer onboarding process. We're a B2B SaaS with a 3-step setup.",
+      "expected_skills": ["sop"],
+      "expected_references": ["document-types.md"],
+      "assertions": ["uses SOP format", "includes roles", "step-by-step with verbs", "includes prerequisites"]
+    },
+    {
+      "id": "sop-runbook",
+      "domain": "sop",
+      "prompt": "Create a runbook for handling production database failovers.",
+      "expected_skills": ["sop"],
+      "expected_references": ["document-types.md"],
+      "assertions": ["uses runbook format", "includes rollback steps", "has escalation path", "includes commands"]
+    },
+    {
+      "id": "router-cross-domain",
+      "domain": "research",
+      "prompt": "Research our competitors in the vocal coaching space and then create a LinkedIn post about what we found.",
+      "expected_skills": ["research", "linkedin"],
+      "expected_references": ["search-strategies.md", "post-types.md"],
+      "assertions": ["routes to research first", "routes to linkedin second", "max 2 skills rule"]
+    },
+    {
+      "id": "router-brand-content",
+      "domain": "brand-voice",
+      "prompt": "Set up our brand identity and then create a carousel pitch deck using those brand colors.",
+      "expected_skills": ["brand-voice", "carousel"],
+      "expected_references": ["voice-guide.md", "layout-guide.md"],
+      "assertions": ["creates brand first", "applies brand to carousel", "checks brand.json"]
+    },
+    {
+      "id": "visual-media-standalone",
+      "domain": "visual-media",
+      "prompt": "Find me 5 high-quality images about remote team collaboration.",
+      "expected_skills": ["visual-media"],
+      "expected_references": ["review-criteria.md"],
+      "assertions": ["searches for images", "downloads candidates", "reviews visually", "presents approved with scores"]
+    },
+    {
+      "id": "visual-media-carousel",
+      "domain": "carousel",
+      "prompt": "Create a product demo carousel with relevant product screenshots and images.",
+      "expected_skills": ["carousel", "visual-media"],
+      "expected_references": ["layout-guide.md", "review-criteria.md"],
+      "assertions": ["detects image need", "sources images", "uses image layouts"]
+    },
+    {
+      "id": "visual-media-linkedin",
+      "domain": "linkedin",
+      "prompt": "Write a LinkedIn case study post about our AI product with a relevant image.",
+      "expected_skills": ["linkedin", "visual-media"],
+      "expected_references": ["post-types.md", "review-criteria.md"],
+      "assertions": ["writes post", "sources image for post", "recommends image format"]
     }
   ]
 }

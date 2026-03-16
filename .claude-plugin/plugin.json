@@ -1,12 +1,12 @@
 {
-  "name": "imperium-startup",
-  "version": "1.0.0",
-  "description": "Complete startup skill suite: CEO strategy, CTO architecture, product management, marketing (SEO/CRO/copy/email/growth), B2B sales (cold email, 137 triggers, 11 GTM plays), finance (SaaS metrics, DCF), fundraising (pitch deck, investor prep), founder workflows (idea validation, Mom Test, competitor analysis, pricing). Use when the user mentions anything related to startup strategy, fundraising, marketing, sales, product, hiring, metrics, pitch deck, go-to-market, cold email, landing page, SEO, growth, churn, MRR, CAC, LTV, runway, burn rate, or any business/startup topic.",
+  "name": "imperium-brain",
+  "version": "2.1.0",
+  "description": "The Ultimate Startup OS for Claude Code — 18 skills across startup ops, competitive research, and content creation. CEO/CTO/Product/Marketing/Sales/Finance/Legal/Engineering advisors + deep research with imperium-crawl integration + LinkedIn viral posts + PPTX carousels + HTML slides + brand identity + SOPs + video bridge + API discovery. Use when the user mentions anything related to startups, strategy, fundraising, marketing, sales, product, finance, engineering, competitive research, LinkedIn, carousels, brand, presentations, SOPs, or any business topic.",
   "author": {
     "name": "Imperium Tech / Pavle Anđelković"
   },
   "license": "MIT",
-  "homepage": "https://github.com/ceoimperiumprojects/imperium-startup-skill",
+  "homepage": "https://github.com/ceoimperiumprojects/imperium-brain",
   "skills": [
     "./skills/ceo-advisor",
     "./skills/cto-advisor",
@@ -16,13 +16,25 @@
     "./skills/finance",
     "./skills/founder",
     "./skills/legal",
-    "./skills/engineering-advanced"
+    "./skills/engineering-advanced",
+    "./skills/research",
+    "./skills/api-discovery",
+    "./skills/brand-voice",
+    "./skills/linkedin",
+    "./skills/carousel",
+    "./skills/video",
+    "./skills/slides",
+    "./skills/sop",
+    "./skills/visual-media"
   ],
   "agents": [
     "./agents/ceo-strategist.md",
     "./agents/cto-architect.md",
     "./agents/growth-marketer.md",
     "./agents/sales-hunter.md",
-    "./agents/product-analyst.md"
+    "./agents/product-analyst.md",
+    "./agents/market-researcher.md",
+    "./agents/content-creator.md",
+    "./agents/brand-architect.md"
   ]
 }

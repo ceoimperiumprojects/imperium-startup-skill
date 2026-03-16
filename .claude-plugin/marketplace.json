@@ -1,14 +1,14 @@
 {
-  "name": "imperium-startup-marketplace",
-  "description": "Complete startup advisor suite for Claude Code — CEO, CTO, CMO, CFO, sales, product & legal advisors",
+  "name": "imperium-brain-marketplace",
+  "description": "The Ultimate Startup OS for Claude Code — 17 skills, 8 agents, 18 commands covering startup ops, competitive research, and content creation",
   "owner": {
     "name": "Imperium Tech / Pavle Anđelković"
   },
   "plugins": [
     {
-      "name": "imperium-startup",
-      "description": "Complete startup skill suite: CEO strategy, CTO architecture, product management, marketing (SEO/CRO/copy/email/growth), B2B sales (cold email, 137 triggers, 11 GTM plays), finance (SaaS metrics, DCF), fundraising (pitch deck, investor prep), founder workflows (idea validation, Mom Test, competitor analysis, pricing). Use when the user mentions anything related to startup strategy, fundraising, marketing, sales, product, hiring, metrics, pitch deck, go-to-market, cold email, landing page, SEO, growth, churn, MRR, CAC, LTV, runway, or any business/startup topic.",
-      "version": "1.0.0",
+      "name": "imperium-brain",
+      "description": "Complete startup operating system: 9 startup advisor skills (CEO, CTO, Product, Marketing, Sales, Finance, Founder, Legal, Engineering) + deep competitive research with imperium-crawl integration + LinkedIn viral posts + PPTX carousels + HTML slides + brand identity system + SOPs/runbooks + video bridge to Remotion + hidden API discovery. 17 skills, 8 agents, 18 commands, 2,019 RAG chunks. Use when the user mentions anything related to startups, strategy, fundraising, marketing, sales, product, finance, engineering, competitive research, LinkedIn, carousels, brand, presentations, SOPs, or any business topic.",
+      "version": "2.0.0",
       "author": {
         "name": "Imperium Tech / Pavle Anđelković"
       },

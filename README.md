@@ -1,233 +1,305 @@
 <div align="center">
 
-# 🏛️ imperium-startup
+# 🧠 imperium-brain
 
-### Your entire C-suite in one Claude Code plugin.
+### The Ultimate Startup OS for Claude Code.
 
-**9 Domain Skills** · **58 References** · **9 Slash Commands** · **5 Sub-Agents** · **10 Books Distilled**
+**18 Skills** · **80+ References** · **19 Slash Commands** · **8 Sub-Agents** · **47 Evals** · **Intelligent Routing**
 
-[![Claude Code Plugin](https://img.shields.io/badge/Claude_Code-Plugin-blueviolet?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMkw0IDdWMTdMMTIgMjJMMjAgMTdWN0wxMiAyWiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+)](https://github.com/ceoimperiumprojects/imperium-startup-skill)
+[![Claude Code Plugin](https://img.shields.io/badge/Claude_Code-Plugin-blueviolet?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMkw0IDdWMTdMMTIgMjJMMjAgMTdWN0wxMiAyWiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+)](https://github.com/ceoimperiumprojects/imperium-brain)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-250+-orange?style=for-the-badge)]()
+[![Skills](https://img.shields.io/badge/Skills-18-orange?style=for-the-badge)]()
 
-> CEO advisor, CTO architect, CMO, CFO, sales team, product manager, and legal counsel — all running inside your terminal. Built from **7 open-source repositories** and **10 distilled startup books** into one unified plugin.
+> Startup ops + competitive research + content creation — all in one plugin. From pitch deck to LinkedIn viral post, from competitor analysis to brand identity. Built from **7 repos**, **10 books**, and **121K+ impressions** of proven content.
 
 </div>
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
-# Install in two commands
-claude plugin marketplace add ceoimperiumprojects/imperium-startup-skill
-claude plugin install imperium-startup
+# Install
+claude plugin marketplace add ceoimperiumprojects/imperium-brain
+claude plugin install imperium-brain
 ```
 
-That's it. All 9 skills activate automatically based on your prompts — no configuration needed.
+All 18 skills activate automatically. No configuration needed.
 
-**Try it instantly:**
+**Try it:**
 ```
-You: "Validate my startup idea: AI-powered vocal coaching for amateur singers"
-You: "Write a cold email to enterprise prospects for my SaaS product"
-You: "Calculate our runway with €200K funding at €3K/month burn rate"
+You: "Validate my startup idea: AI-powered vocal coaching"
+You: "Research all competitors in the project management space"
+You: "Write a viral LinkedIn post about our first 10 customers"
+You: "Create a pitch deck carousel for our Series A"
+You: "Build our brand identity — colors, fonts, and voice"
+
+# Intelligent routing — it figures out what you ACTUALLY need:
+You: "Write a data-driven LinkedIn post about our market"
+  → Detects implicit research need, runs research first, then writes the post
+
+You: "Create an on-brand carousel about competitors"
+  → Detects brand + research prerequisites, chains: brand → research → carousel
 ```
 
 ---
 
-## ⚡ What You Get
+## Architecture
 
-<table>
-<tr>
-<td align="center"><strong>🧠 9</strong><br/>Domain Skills</td>
-<td align="center"><strong>📎 58</strong><br/>Reference Files</td>
-<td align="center"><strong>💬 9</strong><br/>Slash Commands</td>
-<td align="center"><strong>🤖 5</strong><br/>Sub-Agents</td>
-<td align="center"><strong>📚 10</strong><br/>Books Distilled</td>
-<td align="center"><strong>🧪 23</strong><br/>Eval Scenarios</td>
-</tr>
-</table>
-
-> **12,000+ lines** of startup knowledge, frameworks, templates, and actionable playbooks — zero external dependencies.
+```
+imperium-brain/
+│
+├── SKILL.md                          # Hub router — routes to 18 skills
+│
+├── brand/                            # Shared brand system
+│   ├── brand.json                    # Colors, fonts (user-generated)
+│   ├── tone-of-voice.md             # Writing voice rules
+│   └── templates/                    # 5 pre-built voice templates
+│
+├── skills/
+│   ├── STARTUP OPS (9 skills, unchanged)
+│   │   ├── ceo-advisor/             # Strategy, fundraising, board
+│   │   ├── cto-advisor/             # Architecture, stack, scaling
+│   │   ├── product-manager/         # PRDs, roadmap, RICE
+│   │   ├── marketing/               # SEO, CRO, copy, email, growth
+│   │   ├── sales-gtm/              # Cold email, 137 triggers, GTM
+│   │   ├── finance/                 # SaaS metrics, runway, modeling
+│   │   ├── founder/                 # Validation, interviews, mindset
+│   │   ├── legal/                   # Contracts, entity, compliance
+│   │   └── engineering-advanced/    # Agents, RAG, MCP, CI/CD
+│   │
+│   ├── RESEARCH & INTELLIGENCE (2 new)
+│   │   ├── research/               # 9-phase competitive intelligence
+│   │   └── api-discovery/          # Hidden API detection
+│   │
+│   └── CONTENT CREATION (7 new)
+│       ├── brand-voice/            # Brand identity + tone
+│       ├── linkedin/               # Viral posts, 12 types, 55+ hooks
+│       ├── carousel/               # PPTX decks, 21 layouts
+│       ├── visual-media/           # Image/video sourcing + AI review
+│       ├── video/                  # Bridge to Remotion
+│       ├── slides/                 # HTML presentations, 12 presets
+│       └── sop/                    # SOPs, runbooks, playbooks
+│
+├── agents/                          # 8 sub-agents
+├── commands/                        # 19 slash commands
+├── evals/                           # 47 eval scenarios
+├── templates/                       # 6 reusable templates
+├── assets/                          # Frameworks + checklists
+└── hooks/                           # Session start automation
+```
 
 ---
 
-## 🧠 Domain Skills
+## Intelligent Routing
 
-Skills activate automatically when your prompt matches their domain. No prefixes, no setup.
+The hub router doesn't just match keywords — it **understands intent**. A 5-step Prompt Analysis Protocol detects when your request implicitly needs multiple skills, even if you only asked for one.
 
-| | Domain | What It Does |
-|---|--------|-------------|
-| 👔 | **CEO Advisor** | Strategy, fundraising, board management, stakeholder alignment, decision frameworks |
-| 🔧 | **CTO Advisor** | Architecture evaluation, stack selection, tech debt management, build vs. buy analysis |
-| 📋 | **Product Manager** | PRDs, roadmap planning, RICE prioritization, discovery, user stories |
-| 📣 | **Marketing** | SEO, CRO, copywriting, email sequences, social media, growth hacking |
-| 🎯 | **Sales & GTM** | 34 cold email templates, 137 sales triggers, 11 GTM plays, pipeline building |
-| 💰 | **Finance** | SaaS metrics, financial modeling, runway analysis, investor reporting |
-| 🧭 | **Founder** | Idea validation, competitor analysis, user interviews, MVP planning |
-| ⚖️ | **Legal** | Contracts, entity structure, compliance, IP protection |
-| ⚙️ | **Engineering** | Agent design, RAG architecture, API design, CI/CD, MCP servers |
+**How it works:**
+
+| Step | What it does |
+|------|-------------|
+| **1. Extract Explicit** | Direct keyword match against 18 skills. Single match + no signals = instant route (fast path) |
+| **2. Detect Implicit** | Scans for data signals ("data-driven", "how we stack up"), brand signals ("on-brand", "our voice"), strategy signals ("should we", "moat"), temporal ("then", "after that"), and parallel ("across all channels") |
+| **3. Check State** | Looks at filesystem — `brand/brand.json` exists? Research files present? Skips prerequisites you already have |
+| **4. Resolve Deps** | Builds execution order: research → content, brand → content, research → strategy. Parallelizes where safe |
+| **5. Confirm** | 1 skill = go. Explicit combo = brief plan. Inferred combo = asks you first. Ambiguous = clarifies |
+
+**Examples:**
+
+| You say | It detects | It does |
+|---------|-----------|---------|
+| "Write a LinkedIn post about AI" | linkedin (explicit) | Routes immediately — no extras needed |
+| "Write a data-driven post about our market" | linkedin + research (implicit) | "I noticed you want data-driven content — should I research first?" |
+| "Position ourselves uniquely" | ceo-advisor + research (implicit) | Runs research → feeds into strategic positioning |
+| "Create content across all channels" | linkedin + carousel + slides (parallel) | Runs all three in parallel |
 
 ---
 
-## 💬 Slash Commands
+## Skills
 
+### Startup Ops (9 skills)
+
+| Domain | What It Does |
+|--------|-------------|
+| **CEO Advisor** | Strategy, fundraising, board management, stakeholder alignment |
+| **CTO Advisor** | Architecture evaluation, stack selection, tech debt, build vs buy |
+| **Product Manager** | PRDs, roadmap planning, RICE prioritization, discovery |
+| **Marketing** | SEO, CRO, copywriting, email sequences, growth hacking |
+| **Sales & GTM** | 34 cold email templates, 137 triggers, 11 GTM plays |
+| **Finance** | SaaS metrics, financial modeling, runway analysis |
+| **Founder** | Idea validation, competitor analysis, user interviews |
+| **Legal** | Contracts, entity structure, compliance, IP |
+| **Engineering** | Agent design, RAG, API design, CI/CD, MCP servers |
+
+### Research & Intelligence (2 skills)
+
+| Domain | What It Does |
+|--------|-------------|
+| **Research** | 9-phase competitive intelligence. Maps entire ecosystems, builds feature matrices, mines user sentiment, benchmarks pricing. Optional imperium-crawl integration for bulk scraping, YouTube/Reddit mining |
+| **API Discovery** | Hidden API detection for SPAs. Discovers internal endpoints, authentication patterns, WebSocket connections. For competitive intelligence and integration research |
+
+### Content Creation (7 skills)
+
+| Domain | What It Does |
+|--------|-------------|
+| **Brand Voice** | Brand identity wizard — colors, fonts, visual system, tone-of-voice. Generates 4 brand files used by all content skills |
+| **LinkedIn** | Viral post generator. 12 post types, 55+ hooks, algorithm 2025 rules, engagement psychology. Based on 121K+ impressions |
+| **Carousel** | PPTX/PowerPoint creator. 6 carousel types, 21 Python layout scripts. LinkedIn carousels, pitch decks, reports |
+| **Visual Media** | Image/video sourcing with AI-powered visual review. Searches free sources, downloads candidates, evaluates with Claude's multimodal vision |
+| **Video** | Bridge to Remotion. 5 startup video templates (pitch, demo, social clip, investor update, hiring). Brand-integrated |
+| **Slides** | HTML presentations. Self-contained file, zero dependencies, 12 style presets, keyboard navigation |
+| **SOP** | Process document generator. SOPs, runbooks, playbooks, checklists, process maps with Mermaid diagrams |
+
+---
+
+## Slash Commands
+
+### Startup Ops
 | Command | What It Does |
 |---------|-------------|
-| `/imperium:validate-idea` | Run comprehensive idea validation with scorecard |
-| `/imperium:pitch-deck` | Generate a complete pitch deck with all key slides |
-| `/imperium:fundraise-prep` | Full fundraising preparation — terms, valuation, materials |
-| `/imperium:cold-email` | Create personalized cold email campaigns |
-| `/imperium:competitor-matrix` | Build detailed competitive analysis matrix |
-| `/imperium:pricing-strategy` | Design pricing strategy with tiers and psychology |
-| `/imperium:gtm-plan` | Create complete go-to-market plan |
-| `/imperium:metrics-dashboard` | Calculate and analyze all key startup metrics |
+| `/imperium:validate-idea` | Comprehensive idea validation with scorecard |
+| `/imperium:pitch-deck` | Complete pitch deck generation |
+| `/imperium:fundraise-prep` | Full fundraising preparation |
+| `/imperium:cold-email` | Personalized cold email campaigns |
+| `/imperium:competitor-matrix` | Competitive analysis matrix |
+| `/imperium:pricing-strategy` | Pricing strategy with tiers |
+| `/imperium:gtm-plan` | Go-to-market plan |
+| `/imperium:metrics-dashboard` | SaaS metrics calculation |
 | `/imperium:founder-kb` | Semantic search over 2,019 knowledge chunks |
 
----
+### Research & Intelligence
+| Command | What It Does |
+|---------|-------------|
+| `/imperium:deep-research` | Full 9-phase competitive research |
+| `/imperium:discover-apis` | Hidden API discovery for any website |
+| `/imperium:crawl-check` | Check imperium-crawl installation |
 
-## 🤖 Sub-Agents
-
-Specialized agents you can invoke for focused, deep-dive work:
-
-| Agent | Role | Best For |
-|-------|------|----------|
-| `ceo-strategist` | Strategic decision-making | Board prep, fundraising strategy, pivots |
-| `cto-architect` | Technical architecture | System design, stack evaluation, scaling |
-| `growth-marketer` | Marketing & growth | Campaigns, funnels, content strategy |
-| `sales-hunter` | Outbound sales | Prospecting, pipeline, email sequences |
-| `product-analyst` | Product analysis | PRD reviews, prioritization, user research |
-
----
-
-## 📚 Knowledge Base
-
-Distilled insights from 10 startup books, organized by domain. Every framework, tactic, and mental model — embedded directly into skills as reference files. **No book titles exposed, just pure actionable knowledge.**
-
-### 🎯 Strategy & Monopoly Thinking
-> Contrarian thinking, competition vs. monopoly, power law dynamics, secrets, definite optimism, 0-to-1 innovation frameworks
-
-### 💰 Sales & Negotiation Tactics
-> Tactical empathy, calibrated questions, mirroring & labeling, accusation audits, "no"-oriented questions, negotiation playbooks for founders
-
-### 🔥 Offers & Pricing Psychology
-> Value equation (Dream Outcome × Perceived Likelihood ÷ Time × Effort), Grand Slam offer creation, guarantee stacking, pricing psychology, bonus structures
-
-### 📈 Growth & Traction Channels
-> 19 traction channels, Bullseye framework for channel selection, traction testing methodology, scaling strategies per channel
-
-### 🎯 Competitive Positioning
-> 5-step positioning methodology, competitive alternatives analysis, best-fit customer identification, market category selection, positioning as strategy
-
-### 🧲 Lead Generation Systems
-> 4 core lead generation methods, warm outreach frameworks, cold outreach playbooks, content-based lead gen, paid acquisition strategies
-
-### 🪝 Product Engagement & Habits
-> Hook Model (Trigger → Action → Variable Reward → Investment), habit zone mapping, variable reward design, user engagement loops
-
-### 🧪 Validation & Lean Methodology
-> Build-Measure-Learn loops, validated learning, MVP archetypes, customer development 4-step model, earlyvangelists, pivot criteria
-
-### 🧠 Founder Psychology & Resilience
-> Grit and perseverance frameworks, imposter syndrome management, founder mental health, productivity systems, decision fatigue prevention
+### Content Creation
+| Command | What It Does |
+|---------|-------------|
+| `/imperium:create-brand` | Brand identity wizard |
+| `/imperium:linkedin-post` | LinkedIn viral post generator |
+| `/imperium:carousel` | PPTX carousel/deck creation |
+| `/imperium:create-video` | Video content (Remotion bridge) |
+| `/imperium:create-slides` | HTML presentation slides |
+| `/imperium:create-sop` | SOP/runbook/playbook generator |
+| `/imperium:find-images` | Image/video sourcing with visual AI review |
 
 ---
 
-<details>
-<summary>🔍 <strong>Optional: Semantic Search (founder-kb CLI)</strong></summary>
+## Sub-Agents
 
-For deep search over all **2,019 chunks** with semantic matching:
+| Agent | Role |
+|-------|------|
+| `ceo-strategist` | Strategic decisions, fundraising, board prep |
+| `cto-architect` | Architecture, tech stack, scaling |
+| `growth-marketer` | Marketing campaigns, SEO, content |
+| `sales-hunter` | Outbound sales, pipeline, GTM |
+| `product-analyst` | PRD reviews, prioritization, research |
+| `market-researcher` | Deep competitive intelligence, ecosystem mapping |
+| `content-creator` | LinkedIn, carousels, slides, SOPs, video |
+| `brand-architect` | Brand identity creation, voice definition |
+
+---
+
+## Brand System
+
+Create once, apply everywhere. Run `/imperium:create-brand` to generate:
+
+- `brand/brand.json` — 10 colors, 3 fonts, asset paths
+- `brand/config.json` — Output settings
+- `brand/brand-system.md` — Design philosophy
+- `brand/tone-of-voice.md` — Voice rules per platform
+
+All content skills (LinkedIn, carousel, slides, SOP, video) automatically detect and apply your brand. No brand? Sensible defaults + suggestion to create one.
+
+**5 pre-built templates:** tech-startup, enterprise-saas, consumer-app, developer-tools, creative-agency.
+
+---
+
+## External Tool Integration
+
+### imperium-crawl (optional)
+
+For deep research with bulk scraping, AI extraction, and YouTube/Reddit mining.
 
 ```bash
-# One-time setup
-bash skills/founder/scripts/setup_founder_kb.sh
-
-# Search
-founder-kb search "how to validate a startup idea"
-founder-kb search "pricing strategy" --source 100m-offers
-founder-kb compare "customer interviews" --source1 lean-startup --source2 startup-owners-manual
+npm install -g imperium-crawl
 ```
 
-Requires Python 3.10+ and ~2GB disk for embedding models. The plugin works fully without this — all key insights are already embedded as reference files.
+The research skill uses a two-tier approach:
+- **Tier 1 (always):** WebSearch + WebFetch for quick lookups
+- **Tier 2 (if installed):** imperium-crawl for systematic, parallel research
+
+Falls back gracefully if not installed.
+
+### Remotion (optional)
+
+For MP4 video creation. The video skill bridges to Remotion.
+
+```bash
+npx create-video@latest
+```
+
+Falls back to HTML slides or carousel if not available.
+
+---
+
+## Knowledge Base
+
+10 startup books distilled into actionable frameworks:
+
+- **Strategy** — Contrarian thinking, monopoly building, power law dynamics
+- **Sales** — Tactical empathy, mirroring, calibrated questions
+- **Offers** — Value equation, Grand Slam offers, guarantee stacking
+- **Growth** — 19 traction channels, Bullseye framework
+- **Positioning** — 5-step methodology, competitive alternatives
+- **Lead Gen** — Warm/cold outreach, content-based, paid acquisition
+- **Engagement** — Hook Model, habit zones, variable rewards
+- **Validation** — Build-Measure-Learn, MVP archetypes, pivot criteria
+- **Founder** — Grit, imposter syndrome, productivity systems
+
+<details>
+<summary><strong>Optional: Semantic Search (founder-kb CLI)</strong></summary>
+
+```bash
+bash skills/founder/scripts/setup_founder_kb.sh
+founder-kb search "product-market fit frameworks"
+```
+
+Requires Python 3.10+ and ~2GB disk. The plugin works fully without this.
 
 </details>
 
 ---
 
-## 🏗️ Architecture
+## Eval Coverage
+
+**47 eval scenarios** across all 18 domains:
 
 ```
-imperium-startup/
-├── 📄 .claude-plugin/plugin.json    # Plugin manifest
-├── 🧠 skills/                       # 9 domain skills
-│   ├── ceo-advisor/                 #   ├── skill.md + 7 references
-│   ├── cto-advisor/                 #   ├── skill.md + 4 references
-│   ├── product-manager/             #   ├── skill.md + 7 references
-│   ├── marketing/                   #   ├── skill.md + 10 references
-│   ├── sales-gtm/                   #   ├── skill.md + 9 references
-│   ├── finance/                     #   ├── skill.md + 3 references
-│   ├── founder/                     #   ├── skill.md + 10 references + KB scripts
-│   ├── legal/                       #   ├── skill.md + 3 references
-│   └── engineering-advanced/        #   └── skill.md + 5 references
-├── 💬 commands/                     # 9 slash commands
-├── 🤖 agents/                      # 5 sub-agents
-├── 📝 templates/                   # 6 reusable templates
-├── 📦 assets/                      # Frameworks + checklists
-│   ├── frameworks/                  #   Lean Canvas, JTBD, Value Prop Canvas, Mom Test
-│   └── checklists/                  #   Launch, fundraising, SEO checklists
-├── 🧪 evals/                       # 23 eval scenarios
-└── 🪝 hooks/                       # Session start automation
+Startup Ops:     CEO (4) · CTO (2) · Product (2) · Marketing (3) · Sales (4)
+                 Finance (2) · Founder (4) · Legal (1) · Engineering (1)
+
+Research:        Ecosystem (1) · Deep (1) · Video Discovery (1) · Sentiment (1)
+                 API Discovery SPA (1) · API Discovery GraphQL (1)
+
+Content:         Brand Create (1) · Brand Voice (1) · LinkedIn Story (1)
+                 LinkedIn Contrarian (1) · LinkedIn Listicle (1)
+                 Carousel LinkedIn (1) · Carousel Pitch (1)
+                 Visual Media Standalone (1) · Visual Media + Carousel (1)
+                 Visual Media + LinkedIn (1)
+                 Video Pitch (1) · Video Social (1)
+                 Slides HTML (1) · Slides Branded (1)
+                 SOP Onboarding (1) · SOP Runbook (1)
+
+Cross-Domain:    Research + LinkedIn routing (1) · Brand + Carousel routing (1)
 ```
 
 ---
 
-## 📦 Templates & Scripts
-
-### Templates
-| Template | Format | Purpose |
-|----------|--------|---------|
-| Pitch Deck | JSON | Complete slide-by-slide pitch deck structure |
-| Investor Update | MD | Monthly investor communication template |
-| PRD | MD | Product Requirements Document framework |
-| GTM Plan | MD | Go-to-market strategy template |
-| Competitive Matrix | MD | Side-by-side competitor analysis |
-| Board Deck | MD | Board meeting presentation outline |
-
-### Frameworks & Checklists
-Lean Canvas, Mom Test Interview Guide, JTBD Framework, Value Proposition Canvas, Launch Checklist, Fundraising Checklist, SEO Checklist
-
-### Python Scripts (stdlib only — no pip install needed)
-| Script | What It Does |
-|--------|-------------|
-| `saas_metrics_calculator.py` | Calculate MRR, churn, LTV, CAC, and all key SaaS metrics |
-| `financial_model.py` | Generate 18-month projections with bear/base/bull scenarios |
-| `rice_prioritizer.py` | Score and rank features using the RICE framework |
-
----
-
-## 🧪 Eval Coverage
-
-The plugin includes **23 eval scenarios** covering all 9 domains with assertion-based testing:
-
-```
-✅ CEO Advisor     — fundraising, strategy, board prep
-✅ CTO Advisor     — architecture evaluation, build vs buy
-✅ Product Manager — PRD critique, RICE prioritization
-✅ Marketing       — landing pages, SEO strategy, email sequences
-✅ Sales & GTM     — cold email, pipeline building, negotiation, offers
-✅ Finance         — SaaS metrics, runway modeling
-✅ Founder         — idea validation, user interviews, mindset, KB search
-✅ Legal           — entity structure
-✅ Engineering     — agent architecture design
-```
-
-> Each scenario tests skill activation, reference file loading, and output quality assertions.
-
----
-
-## 🙏 Source Repositories
-
-This plugin synthesizes and builds upon content from these open-source projects:
+## Source Repositories
 
 | Repository | Contribution |
 |-----------|-------------|
@@ -243,7 +315,7 @@ This plugin synthesizes and builds upon content from these open-source projects:
 
 <div align="center">
 
-## 📄 License
+## License
 
 MIT — use it, fork it, build on it.
 
@@ -251,6 +323,6 @@ MIT — use it, fork it, build on it.
 
 **Built by [Imperium Tech](https://github.com/ceoimperiumprojects) / Pavle Anđelković**
 
-*Your AI co-founder is one install away.* 🚀
+*Your AI co-founder is one install away.*
 
 </div>

@@ -9,6 +9,15 @@ skills/founder/scripts/founder-kb/chroma_db/
 
 # Plan files
 imperium-startup-skill-plan-v2.md
+imperium-brain-brainstorm.md
+blog-research-pipeline.md
+
+# Skill source files (extracted, not needed in repo)
+*.skill
+
+# Sourced media files (downloaded images/video, can be large)
+media/images/
+media/video/
 
 # Python
 __pycache__/
