@@ -197,6 +197,7 @@ For [target customer] who [need/pain point], [product] is a [category] that [key
 - Trying every channel at once instead of mastering one
 - Writing for search engines instead of humans
 - A/B testing without statistical significance
+- Ignoring customer feedback loops — marketing without talking to real users leads to messaging that sounds good but doesn't convert
 
 ## Reference Files
 

@@ -1,6 +1,6 @@
 {
   "name": "imperium-brain",
-  "version": "2.0.0",
+  "version": "2.2.0",
   "evals": [
     {
       "id": "ceo-fundraising",
@@ -27,6 +27,14 @@
       "assertions": ["includes metrics section", "has wins and challenges", "includes asks"]
     },
     {
+      "id": "ceo-zero-to-one",
+      "domain": "ceo-advisor",
+      "prompt": "What does Zero to One say about competition and how should that shape our strategy?",
+      "expected_skills": ["ceo-advisor"],
+      "expected_references": ["contrarian-strategy.md"],
+      "assertions": ["explains competition is for losers", "mentions monopoly building", "discusses power law"]
+    },
+    {
       "id": "sales-cold-email",
       "domain": "sales-gtm",
       "prompt": "Write a cold email to foreclosure attorneys in Miami for our surplus recovery service.",
@@ -41,6 +49,22 @@
       "expected_skills": ["sales-gtm"],
       "expected_references": ["gtm-plays.md", "lead-qualification.md"],
       "assertions": ["defines ICP", "includes qualification criteria", "suggests outreach sequence"]
+    },
+    {
+      "id": "sales-offer-pricing",
+      "domain": "sales-gtm",
+      "prompt": "How should I structure my offer pricing for a B2B SaaS product?",
+      "expected_skills": ["sales-gtm"],
+      "expected_references": ["offer-creation.md"],
+      "assertions": ["references value equation", "discusses pricing psychology", "mentions guarantee stacking"]
+    },
+    {
+      "id": "sales-negotiation",
+      "domain": "sales-gtm",
+      "prompt": "What negotiation tactics work best for closing enterprise sales deals?",
+      "expected_skills": ["sales-gtm"],
+      "expected_references": ["negotiation-tactics.md"],
+      "assertions": ["mentions tactical empathy", "includes calibrated questions", "references mirroring or labeling"]
     },
     {
       "id": "marketing-landing",
@@ -131,6 +155,22 @@
       "assertions": ["provides interview questions", "avoids leading questions", "focuses on past behavior"]
     },
     {
+      "id": "founder-imposter",
+      "domain": "founder",
+      "prompt": "I feel like an imposter as a founder. Everyone seems more experienced than me.",
+      "expected_skills": ["founder"],
+      "expected_references": ["founder-mindset.md"],
+      "assertions": ["normalizes imposter syndrome", "cites statistics", "provides actionable strategies"]
+    },
+    {
+      "id": "founder-kb-search",
+      "domain": "founder",
+      "prompt": "Search the knowledge base for product-market fit frameworks.",
+      "expected_skills": ["founder"],
+      "expected_references": ["book-insights-index.md", "lean-startup-methodology.md"],
+      "assertions": ["references knowledge base", "mentions PMF signals", "provides actionable frameworks"]
+    },
+    {
       "id": "legal-entity",
       "domain": "legal",
       "prompt": "What entity structure should we use for a Serbian startup targeting the US market?",
@@ -146,47 +186,6 @@
       "expected_references": ["agent-design.md"],
       "assertions": ["proposes architecture pattern", "defines tools", "includes guardrails"]
     },
-    {
-      "id": "sales-offer-pricing",
-      "domain": "sales-gtm",
-      "prompt": "How should I structure my offer pricing for a B2B SaaS product?",
-      "expected_skills": ["sales-gtm"],
-      "expected_references": ["offer-creation.md"],
-      "assertions": ["references value equation", "discusses pricing psychology", "mentions guarantee stacking"]
-    },
-    {
-      "id": "founder-imposter",
-      "domain": "founder",
-      "prompt": "I feel like an imposter as a founder. Everyone seems more experienced than me.",
-      "expected_skills": ["founder"],
-      "expected_references": ["founder-mindset.md"],
-      "assertions": ["normalizes imposter syndrome", "cites statistics", "provides actionable strategies"]
-    },
-    {
-      "id": "sales-negotiation",
-      "domain": "sales-gtm",
-      "prompt": "What negotiation tactics work best for closing enterprise sales deals?",
-      "expected_skills": ["sales-gtm"],
-      "expected_references": ["negotiation-tactics.md"],
-      "assertions": ["mentions tactical empathy", "includes calibrated questions", "references mirroring or labeling"]
-    },
-    {
-      "id": "ceo-zero-to-one",
-      "domain": "ceo-advisor",
-      "prompt": "What does Zero to One say about competition and how should that shape our strategy?",
-      "expected_skills": ["ceo-advisor"],
-      "expected_references": ["contrarian-strategy.md"],
-      "assertions": ["explains competition is for losers", "mentions monopoly building", "discusses power law"]
-    },
-    {
-      "id": "founder-kb-search",
-      "domain": "founder",
-      "prompt": "Search the knowledge base for product-market fit frameworks.",
-      "expected_skills": ["founder"],
-      "expected_references": ["book-insights-index.md", "lean-startup-methodology.md"],
-      "assertions": ["references knowledge base", "mentions PMF signals", "provides actionable frameworks"]
-    },
-
     {
       "id": "research-ecosystem",
       "domain": "research",
@@ -378,6 +377,327 @@
       "expected_skills": ["linkedin", "visual-media"],
       "expected_references": ["post-types.md", "review-criteria.md"],
       "assertions": ["writes post", "sources image for post", "recommends image format"]
+    },
+
+    {
+      "id": "neg-weather",
+      "domain": "negative",
+      "prompt": "What's the weather like in Belgrade today?",
+      "expected_skills": [],
+      "expected_references": [],
+      "assertions": ["does NOT route to any imperium skill", "responds as general assistant"]
+    },
+    {
+      "id": "neg-react-component",
+      "domain": "negative",
+      "prompt": "Write me a React component for a todo list with TypeScript.",
+      "expected_skills": [],
+      "expected_references": [],
+      "assertions": ["does NOT route to any imperium skill", "writes React code directly"]
+    },
+    {
+      "id": "neg-math",
+      "domain": "negative",
+      "prompt": "What is 42 times 73?",
+      "expected_skills": [],
+      "expected_references": [],
+      "assertions": ["does NOT route to any imperium skill", "answers math directly"]
+    },
+    {
+      "id": "neg-recipe",
+      "domain": "negative",
+      "prompt": "Give me a recipe for chocolate chip cookies.",
+      "expected_skills": [],
+      "expected_references": [],
+      "assertions": ["does NOT route to any imperium skill", "provides recipe directly"]
+    },
+    {
+      "id": "neg-too-broad",
+      "domain": "negative",
+      "prompt": "Help me with everything for my startup — marketing, sales, product, legal, finance, engineering, and research all at once.",
+      "expected_skills": [],
+      "expected_references": [],
+      "assertions": ["does NOT load all skills", "asks user to narrow focus", "mentions max 2 skill rule"]
+    },
+    {
+      "id": "neg-git-help",
+      "domain": "negative",
+      "prompt": "How do I rebase my feature branch onto main?",
+      "expected_skills": [],
+      "expected_references": [],
+      "assertions": ["does NOT route to any imperium skill", "provides git help directly"]
+    },
+    {
+      "id": "neg-python-debug",
+      "domain": "negative",
+      "prompt": "I'm getting a TypeError in my Python script. Can you help me debug it?",
+      "expected_skills": [],
+      "expected_references": [],
+      "assertions": ["does NOT route to any imperium skill", "helps with debugging"]
+    },
+    {
+      "id": "neg-personal-advice",
+      "domain": "negative",
+      "prompt": "Should I break up with my girlfriend?",
+      "expected_skills": [],
+      "expected_references": [],
+      "assertions": ["does NOT route to any imperium skill", "responds as general assistant"]
+    },
+    {
+      "id": "linkedin-bilingual",
+      "domain": "linkedin",
+      "prompt": "Write a LinkedIn post in both English and Serbian about launching our product in the Balkan market.",
+      "expected_skills": ["linkedin"],
+      "expected_references": ["post-types.md", "hooks.md"],
+      "assertions": ["generates bilingual content", "maintains hook quality in both languages", "proper formatting per language"]
+    },
+    {
+      "id": "linkedin-no-brand",
+      "domain": "linkedin",
+      "prompt": "Write a LinkedIn post about our AI tool. We haven't set up a brand yet.",
+      "expected_skills": ["linkedin"],
+      "expected_references": ["post-types.md", "hooks.md"],
+      "assertions": ["uses sensible defaults", "suggests create-brand", "still produces quality post"]
+    },
+    {
+      "id": "linkedin-with-image",
+      "domain": "linkedin",
+      "prompt": "Write a LinkedIn post about remote work trends and find a perfect image to go with it.",
+      "expected_skills": ["linkedin", "visual-media"],
+      "expected_references": ["post-types.md", "hooks.md", "review-criteria.md"],
+      "assertions": ["writes post first", "sources complementary image", "recommends image dimensions for LinkedIn"]
+    },
+    {
+      "id": "carousel-no-pptx",
+      "domain": "carousel",
+      "prompt": "Create a carousel deck but I don't have python-pptx installed.",
+      "expected_skills": ["carousel"],
+      "expected_references": ["layout-guide.md"],
+      "assertions": ["detects missing dependency", "offers to install python-pptx", "provides fallback options"]
+    },
+    {
+      "id": "carousel-with-images",
+      "domain": "carousel",
+      "prompt": "Create a product showcase carousel with actual product screenshots for each feature.",
+      "expected_skills": ["carousel", "visual-media"],
+      "expected_references": ["layout-guide.md", "review-criteria.md"],
+      "assertions": ["uses image layouts", "sources product-relevant images", "proper image placement per slide"]
+    },
+    {
+      "id": "sop-playbook",
+      "domain": "sop",
+      "prompt": "Create a sales playbook for our outbound team. Include scripts, objection handling, and qualification criteria.",
+      "expected_skills": ["sop"],
+      "expected_references": ["document-types.md"],
+      "assertions": ["uses playbook format not SOP", "includes scripts section", "has objection handling matrix", "includes qualification criteria"]
+    },
+    {
+      "id": "sop-html-output",
+      "domain": "sop",
+      "prompt": "Write an SOP for incident response and export it as a standalone HTML page.",
+      "expected_skills": ["sop"],
+      "expected_references": ["document-types.md"],
+      "assertions": ["creates SOP content", "generates HTML output", "self-contained file", "includes navigation"]
+    },
+    {
+      "id": "video-no-remotion",
+      "domain": "video",
+      "prompt": "I need a product demo video but I don't have Remotion installed.",
+      "expected_skills": ["video"],
+      "expected_references": ["video-types.md"],
+      "assertions": ["detects no Remotion", "suggests fallback to HTML slides or carousel", "still provides shot list and script"]
+    },
+    {
+      "id": "video-investor-update",
+      "domain": "video",
+      "prompt": "Create a 2-minute investor update video covering our Q1 metrics and product milestones.",
+      "expected_skills": ["video"],
+      "expected_references": ["video-types.md"],
+      "assertions": ["uses investor update template", "includes metrics section", "timing breakdown provided", "professional tone"]
+    },
+    {
+      "id": "slides-dark-theme",
+      "domain": "slides",
+      "prompt": "Create a dark-themed HTML presentation about AI trends for a tech conference.",
+      "expected_skills": ["slides"],
+      "expected_references": ["style-presets.md"],
+      "assertions": ["selects dark style preset", "proper contrast ratios", "readable text on dark background"]
+    },
+    {
+      "id": "brand-update-existing",
+      "domain": "brand-voice",
+      "prompt": "We already have a brand.json but want to refresh our colors and update our tone of voice to be more casual.",
+      "expected_skills": ["brand-voice"],
+      "expected_references": ["voice-guide.md"],
+      "assertions": ["reads existing brand.json first", "preserves unchanged elements", "updates only requested dimensions"]
+    },
+    {
+      "id": "visual-media-video-sourcing",
+      "domain": "visual-media",
+      "prompt": "Find b-roll video clips about team collaboration and remote work for our product video.",
+      "expected_skills": ["visual-media"],
+      "expected_references": ["review-criteria.md"],
+      "assertions": ["searches video sources not just images", "evaluates motion quality", "checks brand fit"]
+    },
+    {
+      "id": "visual-media-brand-fit",
+      "domain": "visual-media",
+      "prompt": "Find images for our carousel that match our brand colors and style exactly.",
+      "expected_skills": ["visual-media"],
+      "expected_references": ["review-criteria.md"],
+      "assertions": ["reads brand.json for color reference", "evaluates brand alignment", "rejects non-matching images"]
+    },
+    {
+      "id": "visual-media-rejection",
+      "domain": "visual-media",
+      "prompt": "Find images about 'success' for a LinkedIn post but reject anything that looks like generic stock photos.",
+      "expected_skills": ["visual-media"],
+      "expected_references": ["review-criteria.md"],
+      "assertions": ["applies content trap detection", "rejects overly generic images", "explains rejection reasons"]
+    },
+    {
+      "id": "engineering-rag",
+      "domain": "engineering-advanced",
+      "prompt": "Design a RAG pipeline for our customer support chatbot. We have 10K support tickets and product docs.",
+      "expected_skills": ["engineering-advanced"],
+      "expected_references": ["rag-architecture.md"],
+      "assertions": ["proposes chunking strategy", "recommends embedding model", "includes retrieval evaluation metrics"]
+    },
+    {
+      "id": "engineering-cicd",
+      "domain": "engineering-advanced",
+      "prompt": "Set up a CI/CD pipeline for our Node.js monorepo with automated testing and deployment.",
+      "expected_skills": ["engineering-advanced"],
+      "expected_references": ["cicd.md"],
+      "assertions": ["recommends CI/CD tool", "includes test stages", "defines deployment strategy"]
+    },
+    {
+      "id": "legal-contracts",
+      "domain": "legal",
+      "prompt": "Review the key clauses I should have in a SaaS customer agreement. We're a B2B startup.",
+      "expected_skills": ["legal"],
+      "expected_references": ["contracts.md"],
+      "assertions": ["covers liability limitations", "mentions data processing", "includes termination clauses"]
+    },
+    {
+      "id": "legal-compliance",
+      "domain": "legal",
+      "prompt": "What compliance requirements do we need for a SaaS handling EU customer data?",
+      "expected_skills": ["legal"],
+      "expected_references": ["compliance.md"],
+      "assertions": ["mentions GDPR", "covers data residency", "includes compliance checklist"]
+    },
+    {
+      "id": "finance-unit-economics",
+      "domain": "finance",
+      "prompt": "Analyze our unit economics: CAC is $150, LTV is $400, payback period is 8 months. Are we healthy?",
+      "expected_skills": ["finance"],
+      "expected_references": ["saas-metrics.md"],
+      "assertions": ["calculates LTV:CAC ratio", "compares to 3:1 benchmark", "identifies red flags if any"]
+    },
+    {
+      "id": "finance-investor-report",
+      "domain": "finance",
+      "prompt": "Create a monthly investor financial report. MRR grew from $10K to $15K, churn is 5%, 3 new enterprise deals.",
+      "expected_skills": ["finance"],
+      "expected_references": ["investor-reporting.md"],
+      "assertions": ["calculates growth rate", "highlights key metrics", "provides narrative with numbers"]
+    },
+    {
+      "id": "cto-tech-debt",
+      "domain": "cto-advisor",
+      "prompt": "We have significant tech debt in our authentication system. How should we approach paying it down while shipping features?",
+      "expected_skills": ["cto-advisor"],
+      "expected_references": ["tech-debt.md"],
+      "assertions": ["provides tech debt assessment framework", "suggests prioritization", "balances debt vs features"]
+    },
+    {
+      "id": "cto-team-scaling",
+      "domain": "cto-advisor",
+      "prompt": "We're growing from 3 to 10 engineers. How should we restructure teams and processes?",
+      "expected_skills": ["cto-advisor"],
+      "expected_references": ["team-scaling.md"],
+      "assertions": ["recommends team structure", "suggests process changes", "mentions communication overhead"]
+    },
+    {
+      "id": "product-mvp",
+      "domain": "product-manager",
+      "prompt": "Scope the MVP for a marketplace connecting freelance designers with startups.",
+      "expected_skills": ["product-manager"],
+      "expected_references": ["mvp-scope.md"],
+      "assertions": ["identifies core features only", "cuts nice-to-haves", "defines success metrics"]
+    },
+    {
+      "id": "product-discovery",
+      "domain": "product-manager",
+      "prompt": "Run a product discovery process for a new feature: AI-generated design suggestions.",
+      "expected_skills": ["product-manager"],
+      "expected_references": ["discovery.md"],
+      "assertions": ["defines problem hypothesis", "suggests research methods", "includes validation criteria"]
+    },
+    {
+      "id": "cross-research-carousel",
+      "domain": "research",
+      "prompt": "Research the top 10 project management tools and create a comparison carousel I can share on LinkedIn.",
+      "expected_skills": ["research", "carousel"],
+      "expected_references": ["search-strategies.md", "layout-guide.md"],
+      "assertions": ["researches before creating carousel", "uses real data in slides", "proper LinkedIn format"]
+    },
+    {
+      "id": "cross-brand-linkedin",
+      "domain": "brand-voice",
+      "prompt": "Define our brand voice and then write a LinkedIn launch announcement using that voice.",
+      "expected_skills": ["brand-voice", "linkedin"],
+      "expected_references": ["voice-guide.md", "post-types.md"],
+      "assertions": ["creates brand voice first", "applies brand voice to post", "consistent tone throughout"]
+    },
+    {
+      "id": "cross-research-strategy",
+      "domain": "research",
+      "prompt": "Analyze the competitive landscape for developer tools and help me decide our strategic positioning.",
+      "expected_skills": ["research", "ceo-advisor"],
+      "expected_references": ["search-strategies.md", "strategy-advisor.md"],
+      "assertions": ["runs research first", "feeds findings into strategy", "provides positioning recommendation"]
+    },
+    {
+      "id": "cross-research-gtm",
+      "domain": "research",
+      "prompt": "Research the CRM market and build a go-to-market plan for our AI-powered CRM tool.",
+      "expected_skills": ["research", "sales-gtm"],
+      "expected_references": ["search-strategies.md", "gtm-plays.md"],
+      "assertions": ["researches market first", "uses research for GTM", "includes target segments from research"]
+    },
+    {
+      "id": "cross-implicit-data",
+      "domain": "linkedin",
+      "prompt": "Write a data-driven LinkedIn post about how our market is underserved.",
+      "expected_skills": ["research", "linkedin"],
+      "expected_references": ["search-strategies.md", "post-types.md"],
+      "assertions": ["detects data signal", "asks about research or runs it", "uses real data in post"]
+    },
+    {
+      "id": "cross-implicit-brand",
+      "domain": "carousel",
+      "prompt": "Create an on-brand carousel introducing our team and culture.",
+      "expected_skills": ["brand-voice", "carousel"],
+      "expected_references": ["voice-guide.md", "layout-guide.md"],
+      "assertions": ["detects brand signal", "checks brand.json existence", "applies brand if available"]
+    },
+    {
+      "id": "cross-full-pipeline",
+      "domain": "brand-voice",
+      "prompt": "We're launching next month. Create our brand, research competitors, then generate LinkedIn and carousel content.",
+      "expected_skills": ["brand-voice", "research"],
+      "expected_references": ["voice-guide.md", "search-strategies.md"],
+      "assertions": ["identifies multi-step pipeline", "confirms plan with user", "executes in correct order"]
+    },
+    {
+      "id": "cross-parallel-content",
+      "domain": "linkedin",
+      "prompt": "Create a LinkedIn post AND a carousel deck about our new feature launch, both using our brand.",
+      "expected_skills": ["linkedin", "carousel"],
+      "expected_references": ["post-types.md", "layout-guide.md"],
+      "assertions": ["identifies parallel-safe combo", "checks brand first", "creates both content pieces"]
     }
   ]
 }

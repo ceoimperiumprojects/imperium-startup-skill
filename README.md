@@ -4,7 +4,7 @@
 
 ### The Ultimate Startup OS for Claude Code.
 
-**18 Skills** · **80+ References** · **19 Slash Commands** · **8 Sub-Agents** · **47 Evals** · **Intelligent Routing**
+**18 Skills** · **80+ References** · **20 Slash Commands** · **8 Sub-Agents** · **87 Evals** · **Intelligent Routing**
 
 [![Claude Code Plugin](https://img.shields.io/badge/Claude_Code-Plugin-blueviolet?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgMkw0IDdWMTdMMTIgMjJMMjAgMTdWN0wxMiAyWiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+)](https://github.com/ceoimperiumprojects/imperium-brain)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
@@ -82,8 +82,12 @@ imperium-brain/
 │       └── sop/                    # SOPs, runbooks, playbooks
 │
 ├── agents/                          # 8 sub-agents
-├── commands/                        # 19 slash commands
-├── evals/                           # 47 eval scenarios
+├── commands/                        # 20 slash commands
+├── evals/                           # 87 eval scenarios
+│   ├── evals.json                   # Eval definitions
+│   ├── eval-runner.py               # Automated eval runner
+│   ├── metrics.md                   # Measurable metrics (4 tiers)
+│   └── results/                     # Timestamped reports
 ├── templates/                       # 6 reusable templates
 ├── assets/                          # Frameworks + checklists
 └── hooks/                           # Session start automation
@@ -186,6 +190,11 @@ The hub router doesn't just match keywords — it **understands intent**. A 5-st
 | `/imperium:create-sop` | SOP/runbook/playbook generator |
 | `/imperium:find-images` | Image/video sourcing with visual AI review |
 
+### Eval & Quality
+| Command | What It Does |
+|---------|-------------|
+| `/imperium:eval-loop` | Automated structural checks and quality analysis |
+
 ---
 
 ## Sub-Agents
@@ -276,26 +285,45 @@ Requires Python 3.10+ and ~2GB disk. The plugin works fully without this.
 
 ## Eval Coverage
 
-**47 eval scenarios** across all 18 domains:
+**87 eval scenarios** across all 18 domains + negative tests + cross-domain workflows:
 
 ```
-Startup Ops:     CEO (4) · CTO (2) · Product (2) · Marketing (3) · Sales (4)
-                 Finance (2) · Founder (4) · Legal (1) · Engineering (1)
+Startup Ops:     CEO (4) · CTO (4) · Product (4) · Marketing (3) · Sales (4)
+                 Finance (4) · Founder (4) · Legal (3) · Engineering (3)
 
 Research:        Ecosystem (1) · Deep (1) · Video Discovery (1) · Sentiment (1)
                  API Discovery SPA (1) · API Discovery GraphQL (1)
 
-Content:         Brand Create (1) · Brand Voice (1) · LinkedIn Story (1)
-                 LinkedIn Contrarian (1) · LinkedIn Listicle (1)
-                 Carousel LinkedIn (1) · Carousel Pitch (1)
+Content:         Brand Create (1) · Brand Voice (1) · Brand Update (1)
+                 LinkedIn Story (1) · LinkedIn Contrarian (1) · LinkedIn Listicle (1)
+                 LinkedIn Bilingual (1) · LinkedIn No Brand (1) · LinkedIn + Image (1)
+                 Carousel LinkedIn (1) · Carousel Pitch (1) · Carousel No PPTX (1)
+                 Carousel + Images (1)
                  Visual Media Standalone (1) · Visual Media + Carousel (1)
-                 Visual Media + LinkedIn (1)
-                 Video Pitch (1) · Video Social (1)
-                 Slides HTML (1) · Slides Branded (1)
-                 SOP Onboarding (1) · SOP Runbook (1)
+                 Visual Media + LinkedIn (1) · Visual Media Video (1)
+                 Visual Media Brand Fit (1) · Visual Media Rejection (1)
+                 Video Pitch (1) · Video Social (1) · Video No Remotion (1)
+                 Video Investor (1)
+                 Slides HTML (1) · Slides Branded (1) · Slides Dark (1)
+                 SOP Onboarding (1) · SOP Runbook (1) · SOP Playbook (1)
+                 SOP HTML (1)
 
-Cross-Domain:    Research + LinkedIn routing (1) · Brand + Carousel routing (1)
+Cross-Domain:    Research→LinkedIn (1) · Brand→Carousel (1) · Research→Carousel (1)
+                 Brand→LinkedIn (1) · Research→Strategy (1) · Research→GTM (1)
+                 Implicit Data (1) · Implicit Brand (1) · Full Pipeline (1)
+                 Parallel Content (1)
+
+Negative Tests:  Weather (1) · React (1) · Math (1) · Recipe (1)
+                 Too Broad (1) · Git (1) · Python Debug (1) · Personal (1)
 ```
+
+### Automated Eval Runner
+
+```bash
+python3 evals/eval-runner.py
+```
+
+Runs 17 structural checks across 2 tiers, generates a timestamped report in `evals/results/`. See `evals/metrics.md` for full metric definitions.
 
 ---
 

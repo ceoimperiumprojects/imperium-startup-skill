@@ -284,6 +284,30 @@ Full tactics guide: `references/tactics.md`
 
 ---
 
+## Quality Score (/80)
+
+Rate every post across 8 dimensions, each scored 0-10. Target: 60+ for publish, 70+ for high-confidence viral.
+
+| # | Dimension | 0-3 (Weak) | 4-6 (Decent) | 7-10 (Strong) |
+|---|-----------|-----------|--------------|---------------|
+| 1 | **Hook Power** | Generic, skippable, starts with "I" | Interesting but not scroll-stopping | Impossible to not click "see more" |
+| 2 | **Specificity** | Vague, no numbers, generic claims | Some data but still fuzzy | Exact numbers, names, dates, metrics |
+| 3 | **Value Density** | Filler, obvious advice, nothing new | Useful but available elsewhere | Actionable insight reader can't get elsewhere |
+| 4 | **Emotional Resonance** | Flat, corporate, no feeling | Mildly engaging, some personality | Makes reader feel something — seen, inspired, challenged |
+| 5 | **Formatting** | Wall of text, no breaks | Some formatting but dense sections | Perfect white space, 1-2 sentence paragraphs, mobile-optimized |
+| 6 | **Readability** | Complex sentences, jargon, 12+ grade | Mixed clarity, some jargon | 8th grade level or below, every sentence crystal clear |
+| 7 | **CTA Strength** | No CTA or weak generic question | Question present but uninspiring | Specific question reader is COMPELLED to answer |
+| 8 | **Brand Alignment** | Off-brand or no voice consistency | Partially aligned | Voice, vocabulary, and personality perfectly calibrated |
+
+**Readability target:** Flesch-Kincaid 8th grade level or below. Short words, short sentences, active voice. If a 14-year-old can't understand it, simplify.
+
+**Scoring guide:**
+- 60-69: Publishable with minor polish
+- 70-79: Strong post, likely to perform well
+- 80: Perfect score — rare, aim for 70+
+
+---
+
 ## Pre-Post Checklist
 
 Before publishing any post, verify:

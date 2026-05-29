@@ -72,6 +72,20 @@ Before generating any video content, check if `brand/brand.json` exists in the p
   - Body font: Inter or system sans-serif
 - Use a confident, professional default voice
 
+## Hook Timing by Format
+
+| Format | Hook Duration | Why |
+|--------|--------------|-----|
+| Social Clip (15-30s) | 2-3 seconds | Scroll-stopping speed, instant grab |
+| Investor Update (60s) | 3-5 seconds | Context-setting before metrics |
+| Pitch Video (60-90s) | 3-5 seconds | Must create tension quickly |
+| Product Demo (2-3min) | 5-10 seconds | Audience is already interested, set expectations |
+| Team/Hiring (30-60s) | 3-5 seconds | Fast emotional hook |
+
+**Rule:** Shorter video = shorter hook. Social clips need 2-3s max. Longer videos can afford 5s+.
+
+---
+
 ## Video Templates
 
 ### 1. Pitch Video (60–90 seconds)

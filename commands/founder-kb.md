@@ -1,5 +1,5 @@
 ---
-name: founder-kb
+name: imperium:founder-kb
 description: 'Semantic search over the startup book knowledge base. Use when the user wants to search books, find specific advice from startup literature, or query the founder knowledge base. Triggers on: search books, knowledge base, founder-kb, book search, startup literature, what does [book] say about.'
 user-invocable: true
 ---

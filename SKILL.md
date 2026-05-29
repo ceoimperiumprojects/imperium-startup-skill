@@ -6,7 +6,7 @@ user-invocable: false
 
 # Imperium Brain — Startup Operating System
 
-18 skills, 8 agents, 19 commands. Complete startup intelligence + content creation.
+18 skills, 8 agents, 20 commands. Complete startup intelligence + content creation.
 
 ---
 
@@ -258,6 +258,9 @@ Six common multi-agent workflows. Each specifies trigger, order, handoff, and ex
 - `/imperium:create-slides` — HTML presentation slides
 - `/imperium:create-sop` — SOP/runbook/playbook generator
 - `/imperium:find-images` — Image/video sourcing with visual AI review
+
+### Eval & Quality
+- `/imperium:eval-loop` — Automated structural checks and quality analysis
 
 ---
 
